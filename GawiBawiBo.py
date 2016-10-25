@@ -17,6 +17,14 @@ def determine_winner(my_hand, com_hand, won):
 	:param com_hand : predefined computer choice
 	:return None : None is returned. (void)
 	"""
+
+	if com_hand == 0:
+		print "Computer was gawi."
+	elif com_hand == 1:
+		print "Computer was bawi."
+	else:
+		print "Computer was bo."
+		
 	a = my_hand - com_hand
 	if a > 0 or a == -2:
 		print "You win"
